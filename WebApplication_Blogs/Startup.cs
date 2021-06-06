@@ -32,9 +32,9 @@ namespace WebApplication_Blogs
         {
             services.AddCors(
                 options => {
-                    options.AddPolicy("EnableCors", builder =>
+                    options.AddPolicy("EnableCORS", builder =>
                     {
-                        //builder.WithOrigins("");
+                        //builder.WithOrigins("http://localhost:8080");
                         builder.AllowAnyOrigin();
                         builder.AllowAnyHeader();
                         builder.AllowAnyMethod();
@@ -78,6 +78,8 @@ namespace WebApplication_Blogs
             app.UseCors("EnableCORS");
 
             app.UseRouting();
+
+            app.UseStaticFiles();
 
             app.UseAuthentication();
 
