@@ -1,4 +1,5 @@
 <h1> Blogs </h1>
+
 ## Blogs is simple (client - server) application for posting blogs
 
 In this project we use:
