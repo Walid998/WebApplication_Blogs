@@ -86,17 +86,7 @@ export default {
     };
   },
   props: ["blog"],
-  computed: {
-    blogImage() {
-      return {
-        ...this.$props["blog"],
-        img:
-          this.$props["blog"].image &&
-          require("C:\\Users\\Toshiba\\source\\repos\\WebApplication_Blogs\\WebApplication_Blogs\\wwwroot\\images\\" +
-            this.$props["blog"].image),
-      };
-    },
-  },
+  
   methods: {
     getUserRole(role) {
       if (localStorage.getItem("role") == role) {
@@ -105,10 +95,5 @@ export default {
       return false;
     },
   },
-  // data() {
-  //   return {
-  //     b_img: require("C:\\Users\\Toshiba\\source\\repos\\WebApplication_Blogs\\WebApplication_Blogs\\wwwroot\\images\\"+this.$props['blog'].image),
-  //   };
-  // },
 };
 </script>

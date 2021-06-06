@@ -97,7 +97,7 @@ export default {
             console.log(response.data);
             this.$emit("close");
             this.$emit("get-blogs");
-            this.clean();
+            //this.clean();
           })
           .catch((err) => console.log(err));
       }

@@ -71,7 +71,10 @@ namespace WebApplication_Blogs.Controllers
             }
             blog.Title = updated_blog.Title;
             blog.Content = updated_blog.Content;
-            blog.Image = newImage;
+            if (newImage == null)
+                blog.Image = blog.Image;
+            else
+                blog.Image = newImage;
             _context.SaveChanges();
             return Ok(blog);
         }
