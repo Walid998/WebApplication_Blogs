@@ -9,6 +9,3 @@ In this project we use:
   <li> The Authentication method is JWT across these two apps</li>
 </ul>
 
-## Demo Video:
-
-link: shorturl.at/hEI12
