@@ -9,3 +9,5 @@ In this project we use:
   <li> The Authentication method is JWT across these two apps</li>
 </ul>
 
+## Demo video:
+https://drive.google.com/file/d/16eyK9aGKp_K3QAsSFqVqNc8O2wnpmC87/view?usp=share_link
